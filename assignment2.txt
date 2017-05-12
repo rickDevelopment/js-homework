@@ -1,0 +1,19 @@
+Open terminal
+
+
+cd ~/
+mkdir -p Sites/my-awesome-directory/nested-directory
+cd ~/Sites/my-awesome-directory/nested-directory
+touch hello.txt
+cd ~/Sites
+touch terminals-are-fun.txt
+
+cd ~
+mkdir -p Sites/1/2/3/4/5/6/7/8/9/hello/its/me/adele.jpg
+mkdir -p Sites/i/was/wondering/if/after/all/these/years/you world/like/to/meet.jpg
+
+
+
+
+
+
