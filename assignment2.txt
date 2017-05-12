@@ -1,5 +1,6 @@
-Open terminal
+Steps for assignement 2
 
+Open terminal
 
 cd ~/
 mkdir -p Sites/my-awesome-directory/nested-directory
