@@ -1,5 +1,5 @@
 var streetNumber = ["1233" , "3456","1883","1234","1275"];
-var streetName = [" Love Lane ", " Pig Street", " Name Avenue ", " Cup Srteet ", "Fish"];
+var streetName = [" Love Lane ", " Pig Street ", " Name Avenue ", " Cup Srteet ", "Fish"];
 var city= ["Money ","Brookstone "," Bronx ","Kingston ", "Trenton "];
 var state = ["New York ", "Washington ", "Phoenix ","New Jeresy " , "Atlanta "];
 var zip = ["10052","10023","78934","21876", "27851" ];
@@ -7,13 +7,13 @@ var zip = ["10052","10023","78934","21876", "27851" ];
 var i = 0;
 
 for(var i = 0; i< streetNumber.length;i++){
-    streetNumber[i] = streetNumber[i] +1;
-    streetName[i] = streetName[i] +1;
-    city[i] = city[i] +1;
-    state[i] = state[i] +1;
-    zip[i] = zip[i] +1;
+    streetNumber[i] = streetNumber[i] ;
+    streetName[i] = streetName[i] ;
+    city[i] = city[i] ;
+    state[i] = state[i] ;
+    zip[i] = zip[i] ;
 
-console.log(streetNumber[i] + streetName[i] +city[i] + state+ zip );
+console.log(streetNumber[i] + streetName[i] +city[i] + state[i]+ zip[i] );
 }
 
 // while(i < streetNumber.length){
