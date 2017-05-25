@@ -14,12 +14,12 @@ var numberList = [1,5,2,20,7,90,3];
 
 
 //Write a function that returns the largest element in an array.
-function compare(list){
+function compare(arrayName){
 
-var max = list[0]
-    for(var i = 1 ; i< list.length; i++){
-    if(max < list[i]){
-        max = list[i];
+var max = arrayName[0]
+    for(var i = 1 ; i< arrayName.length; i++){
+    if(max < arrayName[i]){
+        max = arrayName[i];
     }
 }
 return max // stores the value of the max number
@@ -30,10 +30,10 @@ console.log(compare(numberList)); // run the function and prints its value
 
 
 //Write a function that checks whether an element occurs in an array. Make the function return true or false.
-function isPreset(number){
+function isPreset(number, arrayName){
 
-for(i = 0; i < numberList.length; i++ ){
-    if(number == numberList[i]){
+for(var i = 0; i < arrayName.length; i++ ){
+    if(number == arrayName[i]){
         return true ;
 
     }
@@ -41,8 +41,21 @@ for(i = 0; i < numberList.length; i++ ){
 }
 return false;
 }
-console.log(isPreset(10));
+console.log(isPreset(10, numberList));
 
 //Write a function that returns the elements on odd positions in an array. For the list given above, it would print 5, 20, 90
 
+function oddPosition(){
 
+}
+
+//Write a function that computes the running total of an array. (IE: What is the sum of all of the values in an array)
+
+function total(arrayName){
+    var sum = arrayName[0]
+    for(var i = 0; i < arrayName.length; i++){
+        sum += sum;
+    }
+    return sum;
+}
+console.log(total(numberList));
