@@ -10,43 +10,39 @@
 // You can do all of these in 1 javascript file.
 
 var numberList = [1,5,2,20,7,90,3];
-var compare1 = []; // array to store the larger values of the numberList array.
-var compare2 = [];
-var compare3 = [];
+; // array to store the larger values of the numberList array.
 
-console.log(numberList);
-console.log("The length of the array is: "+numberList.length);
 
-for(var i = 0 ; i <= numberList.length; i++){
-    if(numberList[i] < numberList[i+1]){
-        console.log( numberList[i] + ' is lesser than',numberList[i +1]);
-        compare1.push(numberList[i+1])
+//Write a function that returns the largest element in an array.
+function compare(list){
 
-    }
-      console.log(compare1);
-}
-
-console.log("new loop begins")
-for(var i = 0 ; i <= compare1.length; i++){
-    if(compare1[i] < compare1[i+1]){
-        console.log( compare1[i] + ' is lesser than',compare1[i +1]);
-        compare2.push(compare1[i+1])
+var max = list[0]
+    for(var i = 1 ; i< list.length; i++){
+    if(max < list[i]){
+        max = list[i];
     }
 }
-    console.log(compare2);
-//create a functions to test comparison
+return max // stores the value of the max number
+}
 
-console.log("function test")
-function compare(arrayNum){
-    for(var i = 0 ; i <= arrayNum.length; i++){
-    if(arrayNum[i] < arrayNum[i+1]){
-        console.log( arrayNum[i] + ' is lesser than',arrayNum[i +1]);
-        compare1.push(arrayNum[i+1])
+console.log(compare(numberList)); // run the function and prints its value
+
+
+
+//Write a function that checks whether an element occurs in an array. Make the function return true or false.
+function isPreset(number){
+
+for(i = 0; i < numberList.length; i++ ){
+    if(number == numberList[i]){
+        return true ;
 
     }
-      console.log(compare1);
-}
-}
 
-console.log("function test")
-compare(numberList);
+}
+return false;
+}
+console.log(isPreset(10));
+
+//Write a function that returns the elements on odd positions in an array. For the list given above, it would print 5, 20, 90
+
+
