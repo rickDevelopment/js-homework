@@ -45,10 +45,16 @@ console.log(isPreset(10, numberList));
 
 //Write a function that returns the elements on odd positions in an array. For the list given above, it would print 5, 20, 90
 
-function oddPosition(){
+function oddPosition(arrayName){
+var position = 0;
+for(var i = 1 ; i < arrayName.length; i+=2){
+    position = arrayName[i];
+console.log(position);
+}
 
 }
 
+console.log(oddPosition(numberList));
 //Write a function that computes the running total of an array. (IE: What is the sum of all of the values in an array)
 
 function total(arrayName){
