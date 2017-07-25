@@ -27,12 +27,6 @@ window.onload = function() {
     heading1.appendChild(headingText);
     document.body.appendChild(heading1);
 
-    // Create a new paragraph and append a welcome text
-    var para1 = document.createElement("p");
-    var para1Text = document.createTextNode(results);
-
-    para1.appendChild(para1Text);
-    document.body.appendChild(para1);
 
 
     //================================================//
@@ -40,21 +34,21 @@ window.onload = function() {
     var results
 
 
-
     function fizzbuzz() {
         for (var i = 1; i <= 100; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
-                console.log("Fizz Buzz " + i)
-                results = ("Fizz Buzz" + i)
-
+                console.log("Fizz Buzz " + i )
+                results += ("Fizz Buzz" + i)
             }
             if (i % 3 == 0) {
                 console.log("Fizz " + i);
-                results = ("Fizz " + i)
+                results += ("Fizz " + i)
+
             } else if (i % 5 == 0) {
                 console.log("Buzz " + i);
-                results = (" Buzz" + i)
-            } else {
+                results += (" Buzz" + i)
+
+          } else {
                 console.log(i);
             }
 
@@ -62,10 +56,18 @@ window.onload = function() {
         return results
     } // end of the fizzbuzz app
 
+results = fizzbuzz();
     var $inputValue = document.getElementById('#input_value')
 
 
-    console.log("this is re results" + results)
+    // Create a new paragraph and append a welcome text
+    var para1 = document.createElement("p");
+    var para1Text = document.createTextNode(results);
+
+    para1.appendChild(para1Text);
+    document.body.appendChild(para1);
+
+    console.log("this is the results" + results)
 
     var button1 = document.getElementById('buzz');
     button1.onclick = function(event) {
