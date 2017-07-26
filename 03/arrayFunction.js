@@ -65,3 +65,9 @@ function total(arrayName){
     return sum;
 }
 console.log(total(numberList));
+
+//Write a function that tests whether a string is a palindrome. For example "racecar" would return true, but "cat" would not.
+
+function palindrome(word){
+
+}

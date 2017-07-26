@@ -51,6 +51,15 @@ $(function() {
       var lat = pos.coords.latitude;
       var long = pos.coords.longitude;
 
+      // function search(long, lat){
+      //       var searchOptions = {
+      //     geo: lat + ','+ long + ',' + '25mi',
+      //     only:'Landscapes',
+      //     image_size: 3,
+      //     rpp: 28,
+      //     sort: 'highest_rating'
+      // };
+      // }
       var searchOptions = {
           geo: lat + ','+ long + ',' + '25mi',
           only:'Landscapes',
